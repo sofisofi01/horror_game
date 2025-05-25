@@ -1,0 +1,231 @@
+{
+    "startNode": "intro",
+    "nodes": {
+        "intro": {
+            "type": "video",
+            "videoClipName": "IntroVideo",
+            "choices": [
+                { "text": "Проснуться", "nextNode": "morning" }
+            ]
+        },
+        "morning": {
+            "type": "video",
+            "videoClipName": "MorningVideo",
+            "choices": [
+                { "text": "Выпить кофе", "nextNode": "coffee" }
+            ]
+        },
+        "coffee": {
+            "type": "video",
+            "videoClipName": "CoffeeVideo",
+            "choices": [
+                { "text": "Покормить кота", "nextNode": "cat" }
+            ]
+        },
+        "cat": {
+            "type": "video",
+            "videoClipName": "CatVideo",
+            "choices": [
+                { "text": "Приготовить завтрак", "nextNode": "fridge" }
+            ]
+        },
+        "fridge": {
+            "type": "minigame",
+            "videoClipName": "FridgeVideo",
+            "minigameName": "FridgeMinigame",
+            "nextNode": "cooking"
+        },
+        "cooking": {
+            "type": "video",
+            "videoClipName": "CookingVideo",
+            "choices": [
+                { "text": "Омлет", "nextNode": "eggs" },
+                { "text": "Сырники", "nextNode": "pancakes" }
+            ]
+        },
+        "pancakes": {
+            "type": "video",
+            "videoClipName": "PancakesVideo",
+            "choices": [
+                { "text": "Доставка", "nextNode": "delivery" },
+                { "text": "В магазин", "nextNode": "grocery" }
+            ]
+        },
+        "eggs": {
+            "type": "video",
+            "videoClipName": "EggsVideo",
+            "choices": [
+                { "text": "Доставка", "nextNode": "delivery" },
+                { "text": "В магазин", "nextNode": "grocery" }
+            ]
+        },
+        "delivery": {
+            "type": "video",
+            "videoClipName": "DeliveryVideo",
+            "choices": []
+        },
+        "grocery": {
+            "type": "video",
+            "videoClipName": "GroceryVideo",
+            "choices": [
+                { "text": "Вернуться", "nextNode": "goBack" },
+                { "text": "Не обращать на нее внимания", "nextNode": "ignore" }
+            ]
+        },
+        "goBack": {
+            "type": "video",
+            "videoClipName": "GoBackVideo",
+            "choices": [
+                { "text": "Все-таки доставка", "nextNode": "delivery" }
+            ]
+        },
+        "ignore": {
+            "type": "video",
+            "videoClipName": "IgnoreVideo",
+            "choices": [
+                { "text": "Покурить", "nextNode": "smoke" },
+                { "text": "Не курить", "nextNode": "street" }
+            ]
+        },
+        "smoke": {
+            "type": "video",
+            "videoClipName": "SmokeVideo",
+            "choices": [
+                { "text": "Осмотреть игрушку", "nextNode": "toy" }
+            ]
+        },
+        "street": {
+            "type": "video",
+            "videoClipName": "StreetVideo",
+            "choices": [
+                { "text": "Осмотреть игрушку", "nextNode": "toy" }
+            ]
+        },
+        "toy": {
+            "type": "video",
+            "videoClipName": "ToyVideo",
+            "choices": [
+                { "text": "Осмотреть тело", "nextNode": "explore" },
+                { "text": "Убежать", "nextNode": "runAway" }
+            ]
+        },
+        "explore": {
+            "type": "video",
+            "videoClipName": "ExploreVideo",
+            "choices": []
+        },
+        "runAway": {
+            "type": "video",
+            "videoClipName": "RunAwayVideo",
+            "choices": [
+                { "text": "Помочь", "nextNode": "help" },
+                { "text": "Не помогать", "nextNode": "dontHelp" }
+            ]
+        },
+        "help": {
+            "type": "video",
+            "videoClipName": "HelpVideo",
+            "choices": [
+                { "text": "Открыть", "nextNode": "open" },
+                { "text": "Не открывать", "nextNode": "dontOpen" }
+            ]
+        },
+        "dontHelp": {
+            "type": "video",
+            "videoClipName": "DontHelpVideo",
+            "choices": [
+                { "text": "Открыть", "nextNode": "open" },
+                { "text": "Не открывать", "nextNode": "dontOpen" }
+            ]
+        },
+        "open": {
+            "type": "video",
+            "videoClipName": "OpenVideo",
+            "choices": [
+                { "text": "Проснуться", "nextNode": "evening" }
+            ]
+        },
+        "dontOpen": {
+            "type": "video",
+            "videoClipName": "OpenVideo",
+            "choices": [
+                { "text": "Проснуться", "nextNode": "evening" }
+            ]
+        },
+        "evening": {
+            "type": "video",
+            "videoClipName": "EveningVideo",
+            "choices": [
+                { "text": "БЕЖАТЬ", "nextNode": "escape" },
+                { "text": "Остаться", "nextNode": "stay" }
+            ]
+        },
+        "stay": {
+            "type": "video",
+            "videoClipName": "StayVideo",
+            "choices": []
+        },
+        "escape": {
+            "type": "video",
+            "videoClipName": "EscapeVideo",
+            "choices": [
+                { "text": "Спать дальше", "nextNode": "sleep" },
+                { "text": "Проснуться", "nextNode": "nextDay" }
+            ]
+        },
+        "sleep": {
+            "type": "video",
+            "videoClipName": "SleepVideo",
+            "choices": [
+                { "text": "Спать дальше", "nextNode": "sleep" },
+                { "text": "Проснуться", "nextNode": "nextDay" }
+            ]
+        },
+        "nextDay": {
+            "type": "video",
+            "videoClipName": "NextDayVideo",
+            "choices": [
+                { "text": "Поговорить", "nextNode": "talk" },
+                { "text": "Идти домой", "nextNode": "goHome" }
+            ]
+        },
+        "talk": {
+            "type": "video",
+            "videoClipName": "TalkVideo",
+            "choices": [
+                { "text": "Бороться", "nextNode": "fight" },
+                { "text": "Уехать", "nextNode": "backpack" },
+                { "text": "Это конец...", "nextNode": "die" }
+            ]
+        },
+        "goHome": {
+            "type": "video",
+            "videoClipName": "GoHomeVideo",
+            "choices": [
+                { "text": "Бороться", "nextNode": "fight" },
+                { "text": "Это конец...", "nextNode": "die" }
+            ]
+        },
+        "fight": {
+            "type": "video",
+            "videoClipName": "FightVideo",
+            "choices": []
+        },
+        "backpack": {
+            "type": "minigame",
+            "videoClipName": "BackpackVideo",
+            "minigameName": "BackpackMinigame",
+            "nextNode": "train"
+        },
+        "die": {
+            "type": "video",
+            "videoClipName": "DieVideo",
+            "choices": []
+        },
+        "train": {
+            "type": "video",
+            "videoClipName": "TrainVideo",
+            "choices": []
+        }
+    }
+}
